@@ -7,6 +7,9 @@ import java.util.List;
 
 public class GC {
 
+    /*
+        -XX:+UseParallelGC -Xmx1g -Xms1g -XX:NewRatio=4 -XX:SurvivorRatio=2 -XX:MaxTenuringThreshold=2 -XX:-UseAdaptiveSizePolicy
+     */
     public static List<Person> list = new ArrayList<>();
 
     public static void main(String[] args) throws InterruptedException {
